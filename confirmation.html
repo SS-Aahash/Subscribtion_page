@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="dismiss">
+        <div id="div1">
+            <img src="./assets/images/icon-success.svg" id="dismiss_tic" alt="">
+            <p id="dismiss_head">Thanks for subscribing!</p>
+            <p id="dismiss_para">A confirmation email has been sent to <span id="dismiss_email"></span>. Please open it and click the button inside to confirm your subscription. </p>
+        </div>
+        <button id="Dismiss_button">Dismiss message</button>
+    </div>
+    <script>
+        let span = document.getElementById("dismiss_email")
+        span.innerHTML = sessionStorage.getItem('email')
+        let dismiss_button = document.getElementById("Dismiss_button")
+        dismiss_button.addEventListener("click",()=>{
+            window.location.href = "index.html";
+        })
+    </script>
+</body>
+</html>
