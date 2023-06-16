@@ -12,6 +12,10 @@ p{
     font-weight: 500;
     color: (235, 18%, 26%);
 }
+
+#parent{
+    background-color : white;
+}
 #mobile_img img{
     width: 100%;
     height: 100%;
