@@ -163,7 +163,7 @@ button:hover{
         background-color: hsl(235, 18%, 26%);
     }
     #left{
-    padding:25px 30px 25px 30px;
+        padding:25px 30px 25px 30px;
     }
     #front_heading{
         font-size: 35px;
